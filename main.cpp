@@ -74,10 +74,10 @@ int main() {
         } 
         else if (op==7){
             if (umenu.is_admin()) {
-                AdminOrderMenu admin_omenu(osvc);
+                AdminOrderMenu admin_omenu(osvc)；
                 admin_omenu.show_menu();
             }
-            else std::cout<<"仅管理员可进入\n";
+            else std::cout<<"仅管理员可进入\n"
         }
         else if (op==0) break;
         else std::cout<<"无效选项\n";
